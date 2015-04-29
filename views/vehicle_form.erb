@@ -1,14 +1,21 @@
 <h1>Add a vehicle</h1>
 
 <form action="/vehicles" method="post">
-  <label for="make">Vehicle's make:</label>
-  <input id="make" name="make" type="text">
+  <div class="form-group">
+    <label for="make">Vehicle's make:</label>
+    <input id="make" name="make" type="text">
+  </div>
 
-  <label for"model">Vehicle's model:</label>
-  <input id="model" name="model" type="text">
+  <div class="form-group">
+    <label for"model">Vehicle's model:</label>
+    <input id="model" name="model" type="text">
+  </div>
 
-  <label for="year">Vehicle's year:</label>
-  <input id="year" name="year" type="text">
+  <div class="form-group">
+    <label for="year">Vehicle's year:</label>
+    <input id="year" name="year" type="text">
+  </div>
+
 
   <button type="submit">Add vehicle</button>
 </form>

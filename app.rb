@@ -9,7 +9,7 @@ end
 
 get('/vehicles') do
   @vehicles = Vehicle.all()
-  erb(:vehicle)
+  erb(:vehicles)
 end
 
 get('/vehicles/new') do
