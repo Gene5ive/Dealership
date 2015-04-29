@@ -13,4 +13,12 @@ describe(Vehicle) do
       expect(test_vehicle.make()).to(eq("Tesla"))
     end
   end
+
+  describe('#model') do
+    it("returns the model of the vehicle") do
+      test_vehicle = Vehicle.new("Tesla", "ModelS", 2010)
+      test_vehicle.save()
+      expect(test_vehicle.model()).to(eq("ModelS"))
+    end
+  end
 end
