@@ -55,7 +55,7 @@ describe(Vehicle) do
   describe("#age") do
     it("returns vehicles age") do
       test_vehicle = Vehicle.new("Tesla", "ModelS", 2010)
-      expect(test_vehicle.age()).to(eq(15))
+      expect(test_vehicle.age()).to(eq(5))
     end
   end
 

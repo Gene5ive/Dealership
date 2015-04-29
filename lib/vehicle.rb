@@ -31,4 +31,9 @@ class Vehicle
   define_method(:year) do
     @year
   end
+
+  define_method(:age) do
+    current_year = Time.new().year()
+    age = current_year.-(@year)
+  end
 end
