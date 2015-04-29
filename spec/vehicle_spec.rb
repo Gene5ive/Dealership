@@ -37,4 +37,18 @@ describe(Vehicle) do
        expect(Vehicle.all()).to(eq([test_vehicle]))
     end
   end
+
+  describe(".all") do
+    it("is empty at first") do
+      expect(Vehicle.all()).to(eq([]))
+    end
+  end
+
+  describe(".clear") do
+    it("empties out all of the saved vehicles") do
+      Vehicle.new("Tesla", "ModelS", 2010)
+      Vehicle.clear()
+      expect(Vehicle.all()).to(eq([]))
+    end
+  end
 end
